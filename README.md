@@ -1,4 +1,4 @@
-># btap1-web-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e973dcd3-595b-474e-8021-9cec50273f2f" />># btap1-web-
 Một lớp thư viện tính toán "số may mắn cá nhân" dựa trên tên và ngày sinh.
 Người dùng nhập Tên và Ngày sinh.
 Hệ thống sẽ tính Số may mắn (Lucky Number) dựa theo ngày sinh.
@@ -71,9 +71,87 @@ View → Toolbox (hoặc Ctrl+Alt+X).
  <img width="1266" height="690" alt="image" src="https://github.com/user-attachments/assets/825e861a-89cb-4659-8935-a12b41d9325c" />
  
 # E Project 4 — WebForms
+1 Tại Solution Explorer → chuột phải vào Solution StepSuite → Add → New Project…
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c6f34b5-443d-401f-b5b7-a61e159ca115" />
 
+Project name: LuckyNumberWeb
+Frame work: Chọn .NET Framework 2.0 
+chọn template Empty → Create.
+2 Thêm tham chiếu:
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8f019b1-4562-4b99-ba85-7e73020ae85c" />
+
+ LuckyNumberWeb→ References → Add Reference… → Projects → tích  → OK.
+ 3 Thêm file index.html
+ LuckyNumberWeb → chuột phải → Add → New Item… → HTML Page → Name: index.html → Add.
+ 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fc452156-2dca-4d40-9a51-67d855780b63" />
+
+4 Thêm file api.aspx:
+tạo thêm
+<img width="1834" height="1079" alt="image" src="https://github.com/user-attachments/assets/b37fba3b-e2bf-4a4f-9a04-db4b48937b2c" />
+
+Kết quả sau khi run 
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2a4d4c3a-2dae-4917-b912-ecfd1e45b834" />
+
+# Cấu hình IIS cho Project Web
+A.Bật tính năng Windows cần thiết
+Mở Control Panel → Programs and Features.
+
+<img width="1269" height="570" alt="image" src="https://github.com/user-attachments/assets/377f24a6-b1f0-4296-85ff-f7f8aa27d27b" />
+2 Chọn Turn Windows features on or off Tích:
+.NET Framework 3.5 (includes .NET 2.0 and 3.0) → OK để cài.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f066869c-ca33-4bd4-affb-7d4014018804" />
+
+Internet Information Services → mở World Wide Web Services → Application Development Features → tích:
+
+ASP.NET 3.5
+
+.NET Extensibility 3.5
+
+ISAPI Extensions
+
+ISAPI Filters → OK
+B.Tạo domain cục bộ (hosts)
+1 Mở Notepad dưới quyền admin: Start → gõ Notepad → chuột phải → Run as administrator.
+tìm tới đia chỉ và thêm host 
+<img width="1518" height="183" alt="image" src="https://github.com/user-attachments/assets/1bea6d70-d543-4d59-9a57-9ab76b167c12" />
+
+hiển thị 
+
+<img width="1202" height="677" alt="image" src="https://github.com/user-attachments/assets/d196bf4e-6384-47b8-bfc5-29766f13e288" />
+sau đó nhấn ctrl S 
+
+C.Thêm Website & Binding domain
+
+Mở IIS Manager: nhấn Win, gõ inetmgr → Enter.
+
+<img width="862" height="390" alt="image" src="https://github.com/user-attachments/assets/b84d6640-0e42-4bc3-97ba-43deca38073f" />
+
+Trong IIS Manager → cột trái Sites → chuột phải → Add Website…
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b5b44907-a5b0-4686-bc0a-67aac061830a" />
+
+Site name: 
+
+Physical path: nhấn … → trỏ đúng thư mục project "C:\Users\ACER\Documents\Zalo Received Files\LuckyNumberDLL\LuckyNumberWeb"
+Type: http
+IP address: All Unassigned
+Port: 80
+Host name:  LuckyNumber.local
+Nhấn OK.
+
+D.Tạo Application Pool dùng .NET 2.0
+Mở IIS Manager → cột trái chọn Application Pools.
+Chuột phải → Add Application Pool
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9755f1b2-e872-4132-8c10-a5280eca4da4" />
+ ktra và làm lại
+ 
+
+ 
+ 
 
 
 
