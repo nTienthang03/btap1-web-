@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e973dcd3-595b-474e-8021-9cec50273f2f" />># btap1-web-
+" />># btap1-web-
 Một lớp thư viện tính toán "số may mắn cá nhân" dựa trên tên và ngày sinh.
 Người dùng nhập Tên và Ngày sinh.
 Hệ thống sẽ tính Số may mắn (Lucky Number) dựa theo ngày sinh.
